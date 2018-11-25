@@ -6,7 +6,13 @@ pipeline {
                 echo 'Checkout'
             }
         }
-        stage('Build') {
+        stage('Verify') {
+            steps {
+                echo 'Verify'
+                sh 'mvn -version'
+            }
+        }
+	stage('Build') {
             steps {
                 echo 'Clean Build'
                 sh 'mvn clean compile'

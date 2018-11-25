@@ -8,7 +8,7 @@ pipeline {
         }
         stage('SetUp') {
             steps {
-                echo 'VUOTO'
+                echo '$PATH'
             }
         }
 	stage('Build') {

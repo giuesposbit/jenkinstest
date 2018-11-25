@@ -6,10 +6,10 @@ pipeline {
                 echo 'Checkout'
             }
         }
-        stage('Verify') {
+        stage('SetUp') {
             steps {
-                echo 'Verify'
-                sh 'mvn -version'
+                echo 'SetUp'
+                sh 'export PATH=$PATH:/Users/serbo/sonar_jenkins/apache-maven-3.6.0/bin'
             }
         }
 	stage('Build') {

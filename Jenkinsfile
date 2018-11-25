@@ -8,8 +8,7 @@ pipeline {
         }
         stage('SetUp') {
             steps {
-                echo 'SetUp'
-                sh 'export PATH=$PATH:/Users/serbo/sonar_jenkins/apache-maven-3.6.0/bin'
+                echo 'VUOTO'
             }
         }
 	stage('Build') {
